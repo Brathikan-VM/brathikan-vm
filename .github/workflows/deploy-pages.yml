@@ -13,19 +13,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3  # Updated to use the latest version
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3  # Updated to use the latest version
-      with:
-        node-version: '20'
-
-    - name: Install dependencies
-      run: npm install
-      working-directory: ./
-
-    - name: Build the project
-      run: npm run build  # Replace with your actual build command
-      working-directory: ./
-
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
