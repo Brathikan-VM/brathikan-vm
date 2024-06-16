@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
             projects.push(project);
             localStorage.setItem('projects', JSON.stringify(projects));
 
-            alert('Project added/updated successfully!');
+            console.log('Project added/updated successfully!');
             projectForm.reset();
             displayProjects();
         });
@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const projectsContainer = document.getElementById('projects-container');
         projectsContainer.innerHTML = '';
         let projects = localStorage.getItem('projects');
+        console.log('Retrieved projects:', projects);
         projects = projects ? JSON.parse(projects) : [];
 
         projects.forEach((project, index) => {
