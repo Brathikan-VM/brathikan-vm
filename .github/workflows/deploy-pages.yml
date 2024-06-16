@@ -21,8 +21,11 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+    - name: Build the project
+      run: npm run build  # Add this step if you have a build process
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./  # Ensure this matches your output directory
+        publish_dir: ./public  # Adjust if your build directory is different
