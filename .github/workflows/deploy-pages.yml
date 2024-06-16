@@ -1,0 +1,25 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Set the branch to watch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Pages
+      uses: actions/setup-pages@v1
+
+    - name: Build and Deploy
+      run: |
+        echo "Building the site..."
+        # Add your build commands here, e.g., npm run build or similar
+        echo "Site built successfully!"
+      env:
+        NODE_ENV: production
