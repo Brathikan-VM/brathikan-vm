@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed Articles - Brathikan Vijayamohan Mankayarkarasi</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1>Feed Articles</h1>
+        </div>
+    </header>
+
+    <section id="feed-articles" class="py-5">
+        <div class="container">
+            <h2>Add a New Article</h2>
+            <form id="feed-form">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="shortPara">Short Paragraph</label>
+                    <textarea class="form-control" id="shortPara" rows="2" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="description">Detailed Description</label>
+                    <textarea class="form-control" id="description" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image">Image URL</label>
+                    <input type="text" class="form-control" id="image" required>
+                </div>
+                <div class="form-group">
+                    <label for="link">Article Link</label>
+                    <input type="text" class="form-control" id="link" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Brathikan Vijayamohan Mankayarkarasi. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
